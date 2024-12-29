@@ -1,10 +1,28 @@
 .app-header {
+  background: $darkest-color;
+  color: $lightest-color;
+  padding: 1em;
+  text-align: center;
+  @media (min-width: 940px) {
+    display: none
+  }
+}
+
+.app-menu {
   padding: 2.5em;
   background: $darkest-color;
   text-align: center;
+  margin-top: 0;
+
+  menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
 }
 
-.app-header-avatar {
+.app-menu-avatar {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
@@ -15,7 +33,7 @@
   padding: 2.5rem;
 }
 
-.app-header-social {
+.app-menu-social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +45,7 @@
   }
 }
 
-.app-header-title {
+.app-menu-title {
   color: $lightest-color;
   display: block;
   font-size: 2em;
@@ -36,7 +54,7 @@
 }
 
 @media (min-width: 940px) {
-  .app-header {
+  .app-menu {
     position: fixed;
     top: 0;
     left: 0;
